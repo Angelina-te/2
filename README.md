@@ -12,3 +12,25 @@ else Console.WriteLine("(это не выходной) -> нет");
 }
 CheckingTheDayOfTheWeek(dayNumber);
 
+
+
+Console.Write("Введите число: ");
+int anyNumber = Convert.ToInt32(Console.ReadLine());
+string anyNumberText = Convert.ToString(anyNumber);
+if (anyNumberText.Length > 2){
+Console.WriteLine("третья цифра -> " + anyNumberText[2]);
+}
+else {
+Console.WriteLine("-> третьей цифры нет");
+}
+
+
+Console.WriteLine("Введите трехзначное число");
+while(true) 
+{
+string input = Console.ReadLine();
+if(!input.Equals("exit"))
+    Console.WriteLine("{0}->{1}",input, input[1]);
+else
+  break;
+}
